@@ -7,12 +7,32 @@
     tools:context=".SynthesizerActivity">
 
     <TextView
+        android:layout_width="82dp"
+        android:layout_height="19dp"
+
+        android:text="Hello World!"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Botton
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/button1"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="204dp" />
 
-        android:text="Hello World!"/>
-
-    <Botton />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="252dp" />
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/button1"
