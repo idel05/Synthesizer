@@ -16,29 +16,29 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@Text View"
+            android:text="Hello World!"
             tools:layout_editor_absoluteX="156dp"
             tools:layout_editor_absoluteY="1dp"
             tools:text="Hello World!" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/eButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="onButton1Click"
-            android:text="@string/button1"
+            android:text="@string/mEButton"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:layout_editor_absoluteX="16dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/fButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="onButton2Click"
-            android:text="@string/button2"
-            app:layout_constraintTop_toBottomOf="@+id/button1"
+            android:text="Second Button"
+            app:layout_constraintTop_toBottomOf="@+id/eButton"
             tools:layout_editor_absoluteX="16dp" />
 
     </LinearLayout>
