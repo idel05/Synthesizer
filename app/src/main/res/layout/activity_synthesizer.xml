@@ -16,6 +16,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Hello World!"
             tools:layout_editor_absoluteX="156dp"
             tools:layout_editor_absoluteY="1dp"
@@ -26,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:onClick="onButton1Click"
             android:text="@string/mEButton"
             app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -36,11 +38,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:onClick="onButton2Click"
-            android:text="Second Button"
+            android:text="@string/button2"
             app:layout_constraintTop_toBottomOf="@+id/eButton"
             tools:layout_editor_absoluteX="16dp" />
 
+        <Button
+            android:id="@+id/gButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton3Click"
+            android:text="@string/button3" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
