@@ -30,9 +30,9 @@
             android:layout_weight="1"
             android:onClick="onButton1Click"
             android:text="@string/mEButton"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:layout_editor_absoluteX="16dp" />
-
+            />
+            <!---app:layout_constraintTop_toBottomOf="@+id/textView"
+                   tools:layout_editor_absoluteX="16dp"-->
         <Button
             android:id="@+id/fButton"
             android:layout_width="match_parent"
@@ -40,9 +40,7 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:onClick="onButton2Click"
-            android:text="@string/button2"
-            app:layout_constraintTop_toBottomOf="@+id/eButton"
-            tools:layout_editor_absoluteX="16dp" />
+            android:text="@string/button2"/>
 
         <Button
             android:id="@+id/gButton"
@@ -51,6 +49,39 @@
             android:layout_weight="1"
             android:onClick="onButton3Click"
             android:text="@string/button3" />
+
+        <Button
+            android:id="@+id/aButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton4Click"
+            android:text="@string/button4" />
+
+        <Button
+            android:id="@+id/bButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton5Click"
+            android:text="@string/button5" />
+
+        <Button
+            android:id="@+id/cButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton6Click"
+            android:text="@string/button6" />
+
+        <Button
+            android:id="@+id/dButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton7Click"
+            android:text="@string/button7" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

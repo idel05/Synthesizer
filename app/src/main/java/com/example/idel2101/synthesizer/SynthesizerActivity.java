@@ -14,9 +14,17 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button1;
     private Button button2;
     private Button button3;
+    private Button button4;
+    private Button button5;
+    private Button button6;
+    private Button button7;
     private MediaPlayer mpE;
     private MediaPlayer mpF;
     private MediaPlayer mpG;
+    private MediaPlayer mpA;
+    private MediaPlayer mpB;
+    private MediaPlayer mpC;
+    private MediaPlayer mpD;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,23 +33,51 @@ public class SynthesizerActivity extends AppCompatActivity {
         button1 = (Button) findViewById(R.id.eButton);
         button2 = (Button) findViewById(R.id.fButton);
         button3 = (Button) findViewById(R.id.gButton);
+        button4 = (Button) findViewById(R.id.aButton);
+        button5 = (Button) findViewById(R.id.bButton);
+        button6 = (Button) findViewById(R.id.cButton);
+        button7 = (Button) findViewById(R.id.dButton);
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
-        mpG = MediaPlayer.create(this, R.raw.scaleg);}
-
-      public void onButton1Click( View v)  {
+        mpG = MediaPlayer.create(this, R.raw.scaleg);
+        mpA = MediaPlayer.create(this, R.raw.scalea);
+        mpB = MediaPlayer.create(this, R.raw.scaleb);
+        mpC = MediaPlayer.create(this, R.raw.scalec);
+        mpD = MediaPlayer.create(this, R.raw.scaled);}
+    public void onButton1Click( View v)  {
         mpE.seekTo(0);
         Log.e (TAG, "button1 clicked");
         mpE.start();
-        }
- public void onButton2Click(View v) {
-            mpF.seekTo(0);
-            Log.e (TAG, "button2 clicked");
-            mpF.start();
+    }
+    public void onButton2Click(View v) {
+       mpF.seekTo(0);
+       Log.e (TAG, "button2 clicked");
+       mpF.start();
     }
     public void onButton3Click(View v) {
         mpG.seekTo(0);
         Log.e (TAG, "button3 clicked");
         mpG.start();
+    }
+    public void onButton4Click(View v) {
+        mpA.seekTo(0);
+        Log.e (TAG, "button4 clicked");
+        mpA.start();
+    }
+    public void onButton5Click(View v) {
+        mpB.seekTo(0);
+        Log.e (TAG, "button5 clicked");
+        mpB.start();
+    }
+    public void onButton6Click(View v) {
+        mpC.seekTo(0);
+        Log.e (TAG, "button6 clicked");
+        mpC.start();
+    }
+    public void onButton7Click(View v) {
+        mpD.seekTo(
+                0);
+        Log.e (TAG, "button7 clicked");
+        mpD.start();
     }
 }

@@ -3,4 +3,8 @@
 <string name= "mEButton">E</string>
 <string name= "button2">F</string>
     <string name= "button3">G</string>
+    <string name= "button4">A</string>
+    <string name= "button5">B</string>
+    <string name= "button6">C</string>
+    <string name= "button7">D</string>
 </resources>
