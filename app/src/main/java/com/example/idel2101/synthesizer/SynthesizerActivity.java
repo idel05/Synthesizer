@@ -9,6 +9,7 @@ import android.widget.Button;
 
 
 public class SynthesizerActivity extends AppCompatActivity {
+    private final int WHOLE_NOTE = 1000;
     private static final String TAG =
             SynthesizerActivity.class.getName();
     private Button button1;
@@ -25,6 +26,8 @@ public class SynthesizerActivity extends AppCompatActivity {
     private MediaPlayer mpB;
     private MediaPlayer mpC;
     private MediaPlayer mpD;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +47,27 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpB = MediaPlayer.create(this, R.raw.scaleb);
         mpC = MediaPlayer.create(this, R.raw.scalec);
         mpD = MediaPlayer.create(this, R.raw.scaled);}
-    public void onButton1Click( View v)  {
+
+     private void delayPlaying (int delay) {
+        try {
+            Thread.sleep(delay);
+        } catch (InterruptedException e)  {
+            Log.e("SynthesizerActivity","Audio playback interrupted");
+        }
+     }
+       mChallenge1.setOnClickListener(new View.OnClickListener() {
+           @Override
+        public void OnClick(View v){
+            Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
+            mpE.start();
+            delayPlaying(WHOLE_NOTE);
+            mpF.start();
+        }
+        )};
+
+    }
+}
+     public void onButton1Click( View v)  {
         mpE.seekTo(0);
         Log.e (TAG, "button1 clicked");
         mpE.start();
@@ -80,4 +103,5 @@ public class SynthesizerActivity extends AppCompatActivity {
         Log.e (TAG, "button7 clicked");
         mpD.start();
     }
+
 }
