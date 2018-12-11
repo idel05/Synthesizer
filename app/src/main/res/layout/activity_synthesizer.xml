@@ -23,6 +23,14 @@
             tools:text="Hello World!" />
 
         <Button
+            android:id="@+id/mChallenge1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButton8Click"
+            android:text="@string/mChallenge1" />
+
+        <Button
             android:id="@+id/eButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

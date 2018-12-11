@@ -19,13 +19,19 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button5;
     private Button button6;
     private Button button7;
+    private Button button8;
     private MediaPlayer mpE;
     private MediaPlayer mpF;
+    private MediaPlayer mpFs;
     private MediaPlayer mpG;
+    private MediaPlayer mpGs;
     private MediaPlayer mpA;
     private MediaPlayer mpB;
     private MediaPlayer mpC;
+    private MediaPlayer mpCs;
     private MediaPlayer mpD;
+    private MediaPlayer mpDs;
+    private MediaPlayer mphE;
 
 
     @Override
@@ -40,13 +46,20 @@ public class SynthesizerActivity extends AppCompatActivity {
         button5 = (Button) findViewById(R.id.bButton);
         button6 = (Button) findViewById(R.id.cButton);
         button7 = (Button) findViewById(R.id.dButton);
+        button8 = (Button) findViewById(R.id.mChallenge1);
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
+        mpFs = MediaPlayer.create(this, R.raw.scalefs);
         mpG = MediaPlayer.create(this, R.raw.scaleg);
+        mpGs = MediaPlayer.create(this, R.raw.scalegs);
         mpA = MediaPlayer.create(this, R.raw.scalea);
         mpB = MediaPlayer.create(this, R.raw.scaleb);
         mpC = MediaPlayer.create(this, R.raw.scalec);
-        mpD = MediaPlayer.create(this, R.raw.scaled);}
+        mpCs = MediaPlayer.create(this, R.raw.scalecs);
+        mpD = MediaPlayer.create(this, R.raw.scaled);
+        mpDs = MediaPlayer.create(this, R.raw.scaleds);
+        mphE = MediaPlayer.create(this, R.raw.scalehighe);
+    }
 
      private void delayPlaying (int delay) {
         try {
@@ -55,18 +68,8 @@ public class SynthesizerActivity extends AppCompatActivity {
             Log.e("SynthesizerActivity","Audio playback interrupted");
         }
      }
-       mChallenge1.setOnClickListener(new View.OnClickListener() {
-           @Override
-        public void OnClick(View v){
-            Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
-            mpE.start();
-            delayPlaying(WHOLE_NOTE);
-            mpF.start();
-        }
-        )};
 
-    }
-}
+
      public void onButton1Click( View v)  {
         mpE.seekTo(0);
         Log.e (TAG, "button1 clicked");
@@ -98,10 +101,30 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpC.start();
     }
     public void onButton7Click(View v) {
-        mpD.seekTo(
-                0);
+        mpD.seekTo(0);
         Log.e (TAG, "button7 clicked");
         mpD.start();
     }
+ // mChallenge1.setOnClickListener(new View.OnClickListener) {
 
-}
+        public void onButton8Click(View v){
+           mpE.seekTo(0);
+            Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
+            mpE.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpFs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpGs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpA.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpB.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpCs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpDs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mphE.start();
+        }
+    }
+
