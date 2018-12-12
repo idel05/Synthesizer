@@ -109,6 +109,13 @@ public class SynthesizerActivity extends AppCompatActivity {
 
         public void onButton8Click(View v){
            mpE.seekTo(0);
+           mpFs.seekTo(0);
+            mpGs.seekTo(0);
+            mpA.seekTo(0);
+            mpB.seekTo(0);
+            mpCs.seekTo(0);
+            mpDs.seekTo(0);
+            mphE.seekTo(0);
             Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
             mpE.start();
             delayPlaying(WHOLE_NOTE/2);
@@ -125,6 +132,30 @@ public class SynthesizerActivity extends AppCompatActivity {
             mpDs.start();
             delayPlaying(WHOLE_NOTE/2);
             mphE.start();
+            delayPlaying(WHOLE_NOTE/2);
+            //resets players
+            mpE.seekTo(0);
+            mpFs.seekTo(0);
+            mpGs.seekTo(0);
+            mpA.seekTo(0);
+            mpB.seekTo(0);
+            mpCs.seekTo(0);
+            mpDs.seekTo(0);
+            mphE.seekTo(0);
+            //back down
+            mpDs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpCs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpB.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpA.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpGs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpFs.start();
+            delayPlaying(WHOLE_NOTE/2);
+            mpE.start();
         }
     }
 
