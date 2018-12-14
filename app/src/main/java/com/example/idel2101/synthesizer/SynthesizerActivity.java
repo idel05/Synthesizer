@@ -108,32 +108,6 @@ public class SynthesizerActivity extends AppCompatActivity {
  // mChallenge1.setOnClickListener(new View.OnClickListener) {
 
         public void onButton8Click(View v){
-           mpE.seekTo(0);
-           mpFs.seekTo(0);
-            mpGs.seekTo(0);
-            mpA.seekTo(0);
-            mpB.seekTo(0);
-            mpCs.seekTo(0);
-            mpDs.seekTo(0);
-            mphE.seekTo(0);
-            Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
-            mpE.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpFs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpGs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpA.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpB.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpCs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpDs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mphE.start();
-            delayPlaying(WHOLE_NOTE/2);
-            //resets players
             mpE.seekTo(0);
             mpFs.seekTo(0);
             mpGs.seekTo(0);
@@ -142,19 +116,35 @@ public class SynthesizerActivity extends AppCompatActivity {
             mpCs.seekTo(0);
             mpDs.seekTo(0);
             mphE.seekTo(0);
-            //back down
-            mpDs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpCs.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpB.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpA.start();
-            delayPlaying(WHOLE_NOTE/2);
-            mpGs.start();
-            delayPlaying(WHOLE_NOTE/2);
+            Log.e("SynthesizerActivity", "Challenge 0 Button Clicked");
+            mpE.start();
+            delayPlaying(WHOLE_NOTE);
             mpFs.start();
-            delayPlaying(WHOLE_NOTE/2);
+            delayPlaying(WHOLE_NOTE);
+            mpGs.start();
+            delayPlaying(WHOLE_NOTE);
+            mpA.start();
+            delayPlaying(WHOLE_NOTE);
+            mpB.start();
+            delayPlaying(WHOLE_NOTE);
+            mpCs.start();
+            delayPlaying(WHOLE_NOTE);
+            mpDs.start();
+            delayPlaying(WHOLE_NOTE);
+            mphE.start();
+            delayPlaying(WHOLE_NOTE);
+            mpDs.start();
+            delayPlaying(WHOLE_NOTE);
+            mpCs.start();
+            delayPlaying(WHOLE_NOTE);
+            mpB.start();
+            delayPlaying(WHOLE_NOTE);
+            mpA.start();
+            delayPlaying(WHOLE_NOTE);
+            mpGs.start();
+            delayPlaying(WHOLE_NOTE);
+            mpFs.start();
+            delayPlaying(WHOLE_NOTE);
             mpE.start();
         }
     }
